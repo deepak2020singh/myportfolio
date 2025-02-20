@@ -1,9 +1,9 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
 
 <html>
 <head>
   <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
-  <title>Hello, World!</title>
+  <title>Portfolio website</title>
   <link rel="stylesheet" href="styles.css"/>
   <script src="https://kit.fontawesome.com/81a513e674.js" crossorigin="anonymous"></script>
 </head>
@@ -11,20 +11,20 @@
   <div id="header">
     <div class="container">
       <nav>
-        <h1>Deepak</h1>
-        <ul>
-          <li> <a href="#"/>HOME</a></li>
-          <li> <a href="#"/>ABOUT</a></li>
-        
-          <li> <a href="#"/>CONTACT</a></li>
-        
-          <li> <a href="#"/>HOME</a></li>
-        
+        <h1 class="deep">Deepak</h1>
+        <ul id="side-menu">
+          <li> <a href="#header"/>HOME</a></li>
+          <li> <a href="#about"/>ABOUT</a></li>
+          <li> <a href="#services"/>SERVICES</a></li>
+         <li> <a href="#portfolio"/>PORTFOLIO</a></li>
+          <li> <a href="#contact"/>CONTACT</a></li>
+     <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
         </ul>
+       <i class="fa-solid fa-bars" onclick="openmenu()"></i>
       </nav>
 <div class="header-text">
   <p>Hi all</p>
-  <h1>Ui and Web I am <span>deepak</span><br>deverlorpp</h1>
+  <h1> Android App developer , <br>I am <span>deepak singh</span><br></h1>
 </div>
     </div>
   </div>
@@ -33,14 +33,12 @@
   <div class="container">
     <div class="row">
       <div class="about-col1">
-        <img src="/storage/emulated/0/Download/images.jpeg"/>
+        <img src="https://farm4.staticflickr.com/3752/9684880330_9b4698f7cb_z_d.jpg"/>
       </div>
       <div class="about-col2">
         <h2 class="sub-title">About me</h2>
-        <p>I am An Android devlerper and currently learning it .
-          i want to make sonething new Lorem Ipsum is simply dummy text of 
-          the printing and typesetting industry. Lorem Ipsum has been the industry's 
-          standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+        <p>I am certified android developer by udemy,focusing on modern UI development with Jetpack Compose, backend integration with Firebase, and local data persistence with Room Database.
+
         </p>
        <div class="tab-titles">
           <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -48,9 +46,10 @@
           <p class="tab-links" onclick="opentab('education')">Education</p>
       </div>
         <div class="tab-contents active-tab" id="skills">
-          <ul> <li><span>UI</span><br>Desinging App/ Jetpack compose</li></ul>
-           <ul> <li><span>App developer</span><br>Desinging App/ Jetpack compose</li></ul>
-           <ul> <li><span>Kotlin</span><br>Desinging App/ Jetpack compose</li></ul>
+          <ul> <li><span>Programming Languages</span><br>Kotlin , Java(basic), C</li></ul>
+           <ul> <li><span>UI Development</span><br>Desinging App/ Jetpack compose</li></ul>
+           <ul> <li><span>Backend Integration</span><br>Firebase(Authentication, Firestore..)</li></ul>
+        <ul> <li><span>Local Database</span><br>Room Database, SqLite</li></ul>
         
         </div>
          <div class="tab-contents" id="experience">
@@ -60,7 +59,7 @@
         
         </div>
          <div class="tab-contents" id="education">
-          <ul> <li><span>Hi buddy</span><br>Desinging App/ Jetpack compose</li></ul>
+          <ul> <li><span>Graduation</span><br>BCA, JMS Group of Institutions </li></ul>
            <ul> <li><span>App developer</span><br>Desinging App/ Jetpack compose</li></ul>
            <ul> <li><span>Kotlin</span><br>Desinging App/ Jetpack compose</li></ul>
         
@@ -109,7 +108,7 @@
     <h2 class="sub-title">My Work</h2>
     <div class="work-list">
       <div class="work">
-       <img src="/storage/emulated/0/Download/images.jpeg">
+       <img src="https://farm3.staticflickr.com/2220/1572613671_7311098b76_z_d.jpg">
       <div class="layer">
           <h3>Social media App</h3>
           <p>Social mrdua app is good for our </p>
@@ -117,7 +116,7 @@
         </div>
       </div>
       <div class="work">
-       <img src="/storage/emulated/0/Download/images.jpeg">
+       <img src="https://farm9.staticflickr.com/8505/8441256181_4e98d8bff5_z_d.jpg">
        <div class="layer">
           <h3>Social media App</h3>
           <p>Social mrdua app is good for our </p>
@@ -125,7 +124,7 @@
         </div>
       </div>
       <div class="work">
-        <img src="/storage/emulated/0/Download/images.jpeg">
+        <img src="https://farm2.staticflickr.com/1090/4595137268_0e3f2b9aa7_z_d.jpg">
           <div class="layer">
           <h3>Social media App</h3>
           <p>Social mrdua app is good for our </p>
@@ -145,10 +144,10 @@
         <p><i class="fa-solid fa-envelope"></i>deepak@gmail.com</p>
         <p><i class="fa-solid fa-phone"></i>8642576346</p>
         <div class="social-icons">
-          <a href=""><i class="fa-brands fa-linkedin"></i></a>
-           <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/deepak-singh-5a2a76308?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+           <a href="https://www.instagram.com/samsonsingh83?igsh=YzljYTk1ODg3Zg=="><i class="fa-brands fa-square-instagram"></i></a>
           <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
-          <a href=""> <i class="fa-brands fa-facebook"></i></a>
+          <a href="https://m.facebook.com/profile.php?id=100034778243322"> <i class="fa-brands fa-facebook"></i></a>
         </div>
         <a href="/storage/emulated/0/Download/images.jpeg" download class="btn btn2">Download CV</a>
       </div>
@@ -192,7 +191,22 @@ function opentab(tabname) {
   // Add 'active-tab' class to the corresponding tab content
   document.getElementById(tabname).classList.add("active-tab");
 }
+
+</script>
+<script>
+
+var sidemenu = document.getElementById("side-menu");
+
+function openmenu(){
+  sidemenu.style.right = "0";
+}
+
+function closemenu(){
+  sidemenu.style.right = "-200px";
+}
+
+
 </script>
 </body>
-    </html>
-    
+              </html>
+              
