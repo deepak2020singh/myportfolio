@@ -1,14 +1,106 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swiper Example</title>
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <style>
+    html, body {
+      position: relative;
+      height: 100%;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      font-size: 14px;
+      background: #eee;
+      color: #000;
+    }
+    .title{
+      margin-left: 3px;
+    }
+    .swiper {
+      margin-top: 6px;
+      width: 100%;
+      height: 40%;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.7;
+    }
+    .slide-title {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 2.5rem;
+      font-weight: bold;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      z-index: 10;
+    }
+  </style>
 </head>
-
 <body>
-  <p>hi all I am deepak singh </p>
-</body>
+  <div>
+    <h1 class="title">My Work</h1>
+  </div>
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="https://farm9.staticflickr.com/8295/8007075227_dc958c1fe6_z_d.jpg">
+        <div class="slide-title">
+         <h3> UI and UX Desgn </h3>
+         <p>In Jetpack compose modern ui</p>
+          </div>
+      </div>
+      <div class="swiper-slide">
+        <img src="https://farm4.staticflickr.com/3852/14447103450_2d0ff8802b_z_d.jpg" alt="">
+        <div class="slide-title">
+          <h3>Slide 2 Title</h3>
+          <p>Best Services and completed within time</p>
+          </div>
+      </div>
+      <div class="swiper-slide">
+        <img src="https://farm2.staticflickr.com/1090/4595137268_0e3f2b9aa7_z_d.jpg">
+        <div class="slide-title">
+          Slide 3 Title</div>
+      </div>
+      <div class="swiper-slide">
+        <img src="https://farm4.staticflickr.com/3224/3081748027_0ee3d59fea_z_d.jpg">
+        <div class="slide-title">Slide 4 Title</div>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
 
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      autoplay: {
+        delay: 3000, // Delay between slides in milliseconds (3 seconds)
+        disableOnInteraction: false, // Continue autoplay even when user interacts with the slider
+      },
+    });
+  </script>
+</body>
 </html>
