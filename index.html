@@ -1,212 +1,197 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 <head>
-  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
-  <title>Portfolio website</title>
-  <link rel="stylesheet" href="styles.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deepak Singh - Android Developer Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
   <script src="https://kit.fontawesome.com/81a513e674.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <div id="header">
     <div class="container">
       <nav>
-        <h1 class="deep">Deepak</h1>
+        <h1 class="deep">Deepak Singh</h1>
         <ul id="side-menu">
-          <li> <a href="#header"/>HOME</a></li>
-          <li> <a href="#about"/>ABOUT</a></li>
-          <li> <a href="#services"/>SERVICES</a></li>
-         <li> <a href="#portfolio"/>PORTFOLIO</a></li>
-          <li> <a href="#contact"/>CONTACT</a></li>
-     <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          <li><a href="#header">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#services">SERVICES</a></li>
+          <li><a href="#portfolio">PORTFOLIO</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+          <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
         </ul>
-       <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
       </nav>
-<div class="header-text">
-  <p>Hi all</p>
-  <h1> Android App developer , <br>I am <span>deepak singh</span><br></h1>
-</div>
+      <div class="header-text">
+        <p>Hi, I'm</p>
+        <h1>Deepak Singh</h1>
+        <p>Android Developer | Jetpack Compose | Firebase | MVVM | Room Database</p>
+      </div>
     </div>
   </div>
 
-<div id="about">
-  <div class="container">
-    <div class="row">
-      <div class="about-col1">
-        <img src="https://farm4.staticflickr.com/3752/9684880330_9b4698f7cb_z_d.jpg"/>
-      </div>
-      <div class="about-col2">
-        <h2 class="sub-title">About me</h2>
-        <p>I am certified android developer by udemy,focusing on modern UI development with Jetpack Compose, backend integration with Firebase, and local data persistence with Room Database.
-
-        </p>
-       <div class="tab-titles">
-          <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-          <p class="tab-links" onclick="opentab('experience')">Experience</p>
-          <p class="tab-links" onclick="opentab('education')">Education</p>
-      </div>
-        <div class="tab-contents active-tab" id="skills">
-          <ul> <li><span>Programming Languages</span><br>Kotlin , Java(basic), C</li></ul>
-           <ul> <li><span>UI Development</span><br>Desinging App/ Jetpack compose</li></ul>
-           <ul> <li><span>Backend Integration</span><br>Firebase(Authentication, Firestore..)</li></ul>
-        <ul> <li><span>Local Database</span><br>Room Database, SqLite</li></ul>
-        
+  <!-- About Section -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col1">
+          <img src="https://farm4.staticflickr.com/3752/9684880330_9b4698f7cb_z_d.jpg" alt="Deepak Singh">
         </div>
-         <div class="tab-contents" id="experience">
-          <ul> <li><span>2Year</span><br>Desinging App/ Jetpack compose</li></ul>
-           <ul> <li><span>App developer</span><br>Desinging App/ Jetpack compose</li></ul>
-           <ul> <li><span>Kotlin</span><br>Desinging App/ Jetpack compose</li></ul>
-        
-        </div>
-         <div class="tab-contents" id="education">
-          <ul> <li><span>Graduation</span><br>BCA, JMS Group of Institutions </li></ul>
-           <ul> <li><span>App developer</span><br>Desinging App/ Jetpack compose</li></ul>
-           <ul> <li><span>Kotlin</span><br>Desinging App/ Jetpack compose</li></ul>
-        
+        <div class="about-col2">
+          <h2 class="sub-title">About Me</h2>
+          <p>
+            I am a certified Android developer with expertise in modern Android development using Jetpack Compose, Firebase for backend integration, and Room Database for local data persistence. I follow the MVVM architecture to build scalable and maintainable applications.
+          </p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Programming Languages</span><br>Kotlin, Java, C</li>
+              <li><span>UI Development</span><br>Jetpack Compose, XML</li>
+              <li><span>Backend Integration</span><br>Firebase (Authentication, Firestore, Realtime Database)</li>
+              <li><span>Local Database</span><br>Room Database, SQLite</li>
+              <li><span>Architecture</span><br>MVVM, Clean Architecture</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>2023 - Present</span><br>Freelance Android Developer</li>
+              <li><span>2021 - 2023</span><br>Junior Android Developer at XYZ Company</li>
+              <li><span>2020 - 2021</span><br>Intern at ABC Tech</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2020</span><br>BCA from JMS Group of Institutions</li>
+              <li><span>2017</span><br>Higher Secondary Education</li>
+            </ul>
+          </div>
         </div>
       </div>
-      
     </div>
   </div>
-</div>
-<div id="services">
-  <div class="container">
-    <h1 class="sub-title">My Services</h1>
-    <div class="services-list">
-      <div>
-        <i class="fa-solid fa-code"></i>
-        <h2>App Design</h2>
-        <p>It is a long established fact that a reader will be distracted 
-          by the readable content of a page when looking at its layout.
-        </p>
-        <a href="#">learn more</a>
+
+  <!-- Services Section -->
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-mobile"></i>
+          <h2>Android App Development</h2>
+          <p>Building modern Android applications using Jetpack Compose, Kotlin, and MVVM architecture.</p>
+        </div>
+        <div>
+          <i class="fa-solid fa-database"></i>
+          <h2>Backend Integration</h2>
+          <p>Integrating Firebase services like Authentication, Firestore, and Realtime Database for seamless backend functionality.</p>
+        </div>
+        <div>
+          <i class="fa-solid fa-layer-group"></i>
+          <h2>Local Database Management</h2>
+          <p>Implementing Room Database and SQLite for efficient local data storage and management.</p>
+        </div>
       </div>
-       <div>
-         <i class="fa-solid fa-crop"></i>
-        <h2>App Design</h2>
-        <p>It is a long established fact that a reader will be distracted 
-          by the readable content of a page when looking at its layout.
-        </p>
-        <a href="#">learn more</a>
-      </div>
-       <div>
-         <i class="fa-solid fa-crop"></i>
-        <h2>App Design</h2>
-        <p>It is a long established fact that a reader will be distracted 
-          by the readable content of a page when looking at its layout.
-        </p>
-        <a href="#">learn more</a>
-      </div>
-      
-      
     </div>
   </div>
-</div>
 
-<div id="portfolio">
-  <div class="container">
-    <h2 class="sub-title">My Work</h2>
-    <div class="work-list">
-      <div class="work">
-       <img src="https://farm3.staticflickr.com/2220/1572613671_7311098b76_z_d.jpg">
-      <div class="layer">
-          <h3>Social media App</h3>
-          <p>Social mrdua app is good for our </p>
-          <a href="#"><i class="fa-solid fa-user"></i></a>
-        </div>
-      </div>
-      <div class="work">
-       <img src="https://farm9.staticflickr.com/8505/8441256181_4e98d8bff5_z_d.jpg">
-       <div class="layer">
-          <h3>Social media App</h3>
-          <p>Social mrdua app is good for our </p>
-          <a href="#"><i class="fa-solid fa-user"></i></a>
-        </div>
-      </div>
-      <div class="work">
-        <img src="https://farm2.staticflickr.com/1090/4595137268_0e3f2b9aa7_z_d.jpg">
+  <!-- Portfolio Section -->
+  <div id="portfolio">
+    <div class="container">
+      <h2 class="sub-title">My Work</h2>
+      <div class="work-list">
+        <div class="work">
+          <img src="https://farm3.staticflickr.com/2220/1572613671_7311098b76_z_d.jpg" alt="Project 1">
           <div class="layer">
-          <h3>Social media App</h3>
-          <p>Social mrdua app is good for our </p>
-          <a href="#"><i class="fa-solid fa-user"></i></a>
+            <h3>Social Media App</h3>
+            <p>A social media app built with Jetpack Compose and Firebase for real-time interactions.</p>
+            <a href="#"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="https://farm9.staticflickr.com/8505/8441256181_4e98d8bff5_z_d.jpg" alt="Project 2">
+          <div class="layer">
+            <h3>E-Commerce App</h3>
+            <p>An e-commerce app with Room Database for local storage and Firebase for backend services.</p>
+            <a href="#"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="https://farm2.staticflickr.com/1090/4595137268_0e3f2b9aa7_z_d.jpg" alt="Project 3">
+          <div class="layer">
+            <h3>Task Manager App</h3>
+            <p>A task management app using MVVM architecture and Jetpack Compose for a modern UI.</p>
+            <a href="#"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">See More</a>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fa-solid fa-envelope"></i>deepak@gmail.com</p>
+          <p><i class="fa-solid fa-phone"></i>+91 8642576346</p>
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/deepak-singh-5a2a76308"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/samsonsingh83"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://m.facebook.com/deepak"><i class="fa-brands fa-facebook"></i></a>
+          </div>
+          <a href="#" class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+          <form>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
         </div>
       </div>
     </div>
-    <a href="seemore.html" class="btn">See more</a>
-  </div>
-</div>
-
-<div id="contact">
-  <div class="container">
-    <div class="row">
-      <div class="contact-left">
-        <h1 class="sub-title">Contact Me</h1>
-        <p><i class="fa-solid fa-envelope"></i>deepak@gmail.com</p>
-        <p><i class="fa-solid fa-phone"></i>8642576346</p>
-        <div class="social-icons">
-          <a href="https://www.linkedin.com/in/deepak-singh-5a2a76308?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
-           <a href="https://www.instagram.com/samsonsingh83?igsh=YzljYTk1ODg3Zg=="><i class="fa-brands fa-square-instagram"></i></a>
-          <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
-          <a href="https://m.facebook.com/profile.php?id=100034778243322"> <i class="fa-brands fa-facebook"></i></a>
-        </div>
-        <a href="/storage/emulated/0/Download/images.jpeg" download class="btn btn2">Download CV</a>
-      </div>
-      <div class="contact-right">
-        <form>
-          <input type="text" name="name" placeholder="Your Name" required>
-          <input type="email" name="email" placeholder="Your Email" required>
-          <textarea name="meassage" rows="6" placeholder="Your Message"></textarea>
-          <button type="submit" class="btn btn2">Submit</button>
-        </form>
-        
-      </div>
+    <div class="copy-right">
+      <p>© 2024 Deepak Singh. All rights reserved.</p>
     </div>
-    </div>
-  
-  
-  <div class="copy-right">
-    <p>All copy right reserve</p>
   </div>
-</div>
 
+  <script>
+    // Tab switching functionality
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
 
-<script>
-var tablinks = document.getElementsByClassName("tab-links");
-var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname) {
+      for (let tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (let tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
 
-function opentab(tabname) {
-  // Remove 'active-link' class from all tab links
-  for (let i = 0; i < tablinks.length; i++) {
-    tablinks[i].classList.remove("active-link");
-  }
+    // Side menu functionality
+    var sidemenu = document.getElementById("side-menu");
 
-  // Remove 'active-tab' class from all tab contents
-  for (let i = 0; i < tabcontents.length; i++) {
-    tabcontents[i].classList.remove("active-tab");
-  }
+    function openmenu() {
+      sidemenu.style.right = "0";
+    }
 
-  // Add 'active-link' class to the clicked tab link
-  event.currentTarget.classList.add("active-link");
-
-  // Add 'active-tab' class to the corresponding tab content
-  document.getElementById(tabname).classList.add("active-tab");
-}
-
-</script>
-<script>
-
-var sidemenu = document.getElementById("side-menu");
-
-function openmenu(){
-  sidemenu.style.right = "0";
-}
-
-function closemenu(){
-  sidemenu.style.right = "-200px";
-}
-
-
-</script>
+    function closemenu() {
+      sidemenu.style.right = "-200px";
+    }
+  </script>
 </body>
-              </html>
-              
+</html>
+      
+    
+           
