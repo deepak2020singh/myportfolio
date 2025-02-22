@@ -394,6 +394,9 @@ form .btn2 {
     background-color: #262626;
   }
 }
+nav .fa-solid{
+  display: none;
+}
 
 /* Responsive Design for Mobile */
 @media only screen and (max-width: 600px) {
