@@ -395,11 +395,14 @@ form .btn2 {
   }
 }
 
+
 nav .fa-solid {
   display: none;
 }
 
-/* Responsive Design for Mobile */
+
+
+/* Responsive Design */
 @media only screen and (max-width: 600px) {
   .header-text {
     margin-top: 100%;
@@ -408,13 +411,10 @@ nav .fa-solid {
   .header-text h1 {
     font-size: 30px;
   }
-
   nav .fa-solid {
     display: block;
     font-size: 25px;
-    cursor: pointer;
   }
-
   nav ul {
     background: #ff004f;
     position: fixed;
@@ -426,23 +426,16 @@ nav .fa-solid {
     z-index: 2;
     transition: right 0.5s;
   }
-
-  nav ul.active {
-    right: 0;
-  }
-
   nav ul li {
     display: block;
     margin: 25px;
   }
-
-  nav ul .fa-xmark {
+  nav ul .fa-solid {
     position: absolute;
     top: 25px;
     left: 25px;
     cursor: pointer;
   }
-
   .sub-title {
     font-size: 40px;
   }
@@ -462,4 +455,4 @@ nav .fa-solid {
   .copy-right {
     font-size: 14px;
   }
-}
+} 
