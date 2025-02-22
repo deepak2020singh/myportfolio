@@ -27,7 +27,7 @@ body {
 #header {
   width: 100%;
   height: 100vh;
-  background-image: url(Untitled.jpg);
+  background-image: url(https://farm4.staticflickr.com/3075/3168662394_7d7103de7d_z_d.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -395,14 +395,7 @@ form .btn2 {
   }
 }
 
-
-nav .fa-solid {
-  display: none;
-}
-
-
-
-/* Responsive Design */
+/* Responsive Design for Mobile */
 @media only screen and (max-width: 600px) {
   .header-text {
     margin-top: 100%;
@@ -411,10 +404,13 @@ nav .fa-solid {
   .header-text h1 {
     font-size: 30px;
   }
+
   nav .fa-solid {
     display: block;
     font-size: 25px;
+    cursor: pointer;
   }
+
   nav ul {
     background: #ff004f;
     position: fixed;
@@ -426,16 +422,23 @@ nav .fa-solid {
     z-index: 2;
     transition: right 0.5s;
   }
+
+  nav ul.active {
+    right: 0;
+  }
+
   nav ul li {
     display: block;
     margin: 25px;
   }
-  nav ul .fa-solid {
+
+  nav ul .fa-xmark {
     position: absolute;
     top: 25px;
     left: 25px;
     cursor: pointer;
   }
+
   .sub-title {
     font-size: 40px;
   }
