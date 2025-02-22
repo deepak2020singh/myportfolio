@@ -1,4 +1,4 @@
-         <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -16,15 +16,22 @@
       background: #eee;
       color: #000;
     }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
     .title {
       margin-left: 3px;
     }
+
     .swiper {
       margin-top: 6px;
       width: 100%;
-      height: 44vh; /* Use viewport height for better responsiveness */
+      height: 44vh;
       background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75));
     }
+
     .swiper-slide {
       text-align: center;
       font-size: 18px;
@@ -34,12 +41,14 @@
       align-items: center;
       position: relative;
     }
+
     .swiper-slide img {
       display: block;
       width: 100%;
       height: 100%;
       object-fit: cover;
     }
+
     .slide-title {
       position: absolute;
       top: 50%;
@@ -51,17 +60,20 @@
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
       z-index: 10;
     }
+
     .banner {
       margin-top: 10px;
       width: 100%;
-      height: 50vh; /* Use viewport height for better responsiveness */
+      height: 50vh;
       background: 
         linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
         url('https://farm4.staticflickr.com/3224/3081748027_0ee3d59fea_z_d.jpg');
       background-size: cover;
       background-position: center;
       position: relative;
+      animation: fadeInUp 1s ease-out;
     }
+
     .content {
       position: absolute;
       text-align: center;
@@ -70,14 +82,17 @@
       transform: translate(-50%, -50%);
       color: white;
     }
+
     .content h1 {
       font-size: 2.5rem;
       margin-bottom: 10px;
     }
+
     .content p {
       font-size: 1.2rem;
     }
-    button{
+
+    button {
       border-radius: 25px;
       width: 200px;
       text-align: center;
@@ -90,11 +105,17 @@
       font-weight: bold;
       position: relative;
       overflow: hidden;
+      animation: slideInLeft 1s ease-out;
     }
-    
-    span{
-      width:0;
-      height:100%;
+
+    button:hover {
+      transform: scale(1.1);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    span {
+      width: 0;
+      height: 100%;
       background: #009688;
       border-radius: 25px;
       position: absolute;
@@ -103,18 +124,21 @@
       z-index: -1;
       transition: 0.5s;
     }
-    
-    button:hover span{
+
+    button:hover span {
       width: 100%;
     }
-    button:hover{
+
+    button:hover {
       border: none;
     }
+
     .flex-container {
       display: flex;
       justify-content: space-between;
       margin-top: 20px;
     }
+
     .left, .right {
       flex-basis: 45%;
       background: #f4f4f4;
@@ -122,6 +146,7 @@
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       border-radius: 8px;
     }
+
     .skills, .projects, .contact {
       margin: 20px 0;
       padding: 20px;
@@ -129,26 +154,37 @@
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       border-radius: 8px;
     }
+
     .skills h2, .projects h2, .contact h2 {
       margin-bottom: 20px;
     }
+
     .skills ul, .projects ul {
       list-style-type: none;
       padding: 0;
     }
+
     .skills ul li, .projects ul li {
       margin: 10px 0;
     }
+
+    .skills ul li:hover, .projects ul li:hover {
+      transform: translateX(10px);
+      transition: transform 0.3s ease-in-out;
+    }
+
     .contact form {
       display: flex;
       flex-direction: column;
     }
+
     .contact form input, .contact form textarea {
       margin: 10px 0;
       padding: 10px;
       border: 1px solid #ccc;
       border-radius: 4px;
     }
+
     .contact form button {
       background: #009688;
       color: white;
@@ -157,7 +193,7 @@
       cursor: pointer;
       border-radius: 4px;
     }
-    /* Footer Section */
+
     footer {
       background: #333;
       color: #fff;
@@ -165,9 +201,66 @@
       padding: 20px 0;
       margin-top: 40px;
     }
+
     footer p {
       margin: 0;
       font-size: 1rem;
+    }
+
+    /* Animations */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes slideInLeft {
+      from {
+        opacity: 0;
+        transform: translateX(-100px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes slideInRight {
+      from {
+        opacity: 0;
+        transform: translateX(100px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes scaleUp {
+      from {
+        transform: scale(0.9);
+        opacity: 0;
+      }
+      to {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    .animate-on-scroll {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 1s ease-out, transform 1s ease-out;
+    }
+
+    .animate-on-scroll.animated {
+      opacity: 1;
+      transform: translateY(0);
     }
   </style>
 </head>
@@ -211,7 +304,7 @@
   </div>
 
   <!-- Skills Section -->
-  <div class="skills">
+  <div class="skills animate-on-scroll">
     <h2>Skills</h2>
     <ul>
       <li>Jetpack Compose: Building modern UIs with declarative programming.</li>
@@ -223,26 +316,18 @@
   </div>
 
   <!-- Projects Section -->
-  <div class="projects">
+  <div class="projects animate-on-scroll">
     <h2>Projects</h2>
     <ul>
-      <li>
-        <strong>Task Manager App:</strong> A Jetpack Compose app integrated with Firebase for task management.
-      </li>
-      <li>
-        <strong>E-commerce App:</strong> Built with Jetpack Compose and Firebase for real-time product updates.
-      </li>
-      <li>
-        <strong>Social Media App:</strong> A modern UI app with Firebase authentication and real-time chat.
-      </li>
-      <li>
-        <strong>Weather App:</strong> A simple app fetching weather data using REST APIs and displaying it with Jetpack Compose.
-      </li>
+      <li><strong>Task Manager App:</strong> A Jetpack Compose app integrated with Firebase for task management.</li>
+      <li><strong>E-commerce App:</strong> Built with Jetpack Compose and Firebase for real-time product updates.</li>
+      <li><strong>Social Media App:</strong> A modern UI app with Firebase authentication and real-time chat.</li>
+      <li><strong>Weather App:</strong> A simple app fetching weather data using REST APIs and displaying it with Jetpack Compose.</li>
     </ul>
   </div>
 
   <!-- Contact Section -->
-  <div class="contact">
+  <div class="contact animate-on-scroll">
     <h2>Contact Me</h2>
     <form>
       <input type="text" placeholder="Your Name" required>
@@ -272,17 +357,39 @@
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
+    // Swiper Initialization
     var swiper = new Swiper(".mySwiper", {
       pagination: {
         el: ".swiper-pagination",
-        clickable: true, // Allow pagination bullets to be clickable
+        clickable: true,
       },
       autoplay: {
-        delay: 3000, // Delay between slides in milliseconds (3 seconds)
-        disableOnInteraction: false, // Continue autoplay even when user interacts with the slider
+        delay: 3000,
+        disableOnInteraction: false,
       },
-      loop: true, // Enable infinite loop
+      loop: true,
     });
+
+    // Intersection Observer for Scroll Animations
+    function animateOnScroll() {
+      const elements = document.querySelectorAll('.animate-on-scroll');
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animated');
+          }
+        });
+      }, {
+        threshold: 0.5,
+      });
+
+      elements.forEach((element) => {
+        observer.observe(element);
+      });
+    }
+
+    animateOnScroll();
   </script>
 </body>
-</html>
+           </html>
